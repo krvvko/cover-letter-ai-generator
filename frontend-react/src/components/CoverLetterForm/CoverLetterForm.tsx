@@ -38,7 +38,11 @@ const CoverLetterForm: React.FC<CoverLetterFormProps> = ({ generateCoverLetter, 
                 resumeFile: data.resume[0],
                 model: data.model,
             });
-            reset();
+            reset({
+                jobDescription: '',
+                recruiterName: '',
+                model: data.model,
+            });
         }
     };
 
